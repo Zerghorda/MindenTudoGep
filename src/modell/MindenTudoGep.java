@@ -34,7 +34,7 @@ public class MindenTudoGep {
     }
 
     public void generalLottoSzelveny() {
-        int[] lottoSzelveny = null;
+        int[] lottoSzelveny = new int[5];
         for (int i = 0; i < 5; i++) {
             int rSzam = (int) (Math.random() * 91 + 1);
             lottoSzelveny[i] = rSzam;
@@ -55,7 +55,7 @@ public class MindenTudoGep {
             int rSzam = (int) (Math.random() * 4 + 1);
             if (rSzam == 1 && !(i == 15) && !(i == 0)) {
                 szoveg += "1,";
-            }
+            }   
             if (rSzam == 2 && !(i == 15) && !(i == 0)) {
                 szoveg += "2,";
             }
